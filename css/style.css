@@ -1,0 +1,77 @@
+/* Main styles */
+@import url('../fonts/open-sans/OpenSans-Regular.ttf');
+
+:root {
+  --primary-color: #2c3e50;
+  --accent-color: #2980b9;
+  --text-color: #333;
+  --bg-color: #fff;
+  --max-width: 680px;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.site-header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+}
+.site-header .logo {
+  height: 40px;
+  vertical-align: middle;
+}
+.site-header nav {
+  display: inline-block;
+  margin-left: 2rem;
+}
+.site-header nav a {
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.policy-header {
+  color: #fff;
+  padding: 4rem 0;
+  text-align: center;
+}
+.policy-header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+.policy-header p {
+  opacity: 0.8;
+}
+
+.toc {
+  margin: 2rem 0;
+  font-size: 0.9rem;
+}
+.toc a {
+  margin-right: 1rem;
+  color: var(--accent-color);
+}
+
+.policy-content section {
+  margin-bottom: 2rem;
+}
+.policy-content h2 {
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.site-footer {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}

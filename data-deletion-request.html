@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive for mobile -->
+  <title>Data Deletion Request – Catholic Hymn Book</title>
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --accent:  #2980b9;
+      --text:    #333;
+      --bg:      #fff;
+      --maxW:    700px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: var(--maxW);
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    header h1 { color: var(--primary); margin-bottom: .2rem; }
+    header p { color: var(--accent); font-size: .9rem; }
+    nav.toc {
+      margin: 1.5rem 0;
+      font-size: .9rem;
+    }
+    nav.toc a {
+      margin-right: .8rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav.toc a:hover { text-decoration: underline; }
+    section { margin-bottom: 2rem; }
+    section h2 {
+      color: var(--primary);
+      margin-bottom: .5rem;
+      font-size: 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+      font-size: .8rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Data Deletion Request</h1>
+      <p>Catholic Hymn Book App • Last Updated Apr 25, 2025</p>
+    </header>
+
+    <nav class="toc">
+      <strong>Jump to:</strong>
+      <a href="#request">1. How to Request</a>
+      <a href="#deleted">2. Data Deleted</a>
+      <a href="#retained">3. Data Retained</a>
+      <a href="#verification">4. Verification</a>
+      <a href="#legal">5. Legal Notes</a>
+    </nav>
+
+    <main>
+      <section id="request">
+        <h2>1. How to Request</h2>
+        <p>Send an email to <a href="mailto:catholicmezmurapp@gmail.com">catholicmezmurapp@gmail.com</a> from your registered account email.</p>
+        <p>Use subject line: <em>Data Deletion Request – Catholic Hymn Book App</em>.</p>
+        <p>Include:
+          <ul>
+            <li>Your full name</li>
+            <li>Your account email</li>
+            <li>Any details to help identify your account</li>
+          </ul>
+        </p>
+      </section>
+
+      <section id="deleted">
+        <h2>2. Data Deleted</h2>
+        <p>Upon request, we will delete:
+          <ul>
+            <li>Profile information (name, email)</li>
+            <li>Uploaded hymns and metadata</li>
+            <li>Any user-generated content</li>
+          </ul>
+        </p>
+      </section>
+
+      <section id="retained">
+        <h2>3. Data Retained</h2>
+        <p>We retain (anonymized/aggregated only):
+          <ul>
+            <li>Usage analytics for app improvement</li>
+            <li>Records required by law (e.g. tax logs)</li>
+          </ul>
+        </p>
+        <p>All retained data is de-identified and cannot be linked back to you .</p>
+      </section>
+
+      <section id="verification">
+        <h2>4. Verification</h2>
+        <p>For your security, we may request additional proof that the deletion request came from the account owner.</p>
+        <p>If we cannot verify ownership, we will follow Apple’s Data & Privacy guidelines for data access and deletion.</p>
+      </section>
+
+      <section id="legal">
+        <h2>5. Legal Notes</h2>
+        <p>This process meets Apple’s in-app deletion requirement effective June 30 2022  and aligns with COPPA for users under 13.</p>
+        <p>Refer to our <a href="index.html">Privacy Policy</a> for more details on data practices.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Catholic Hymn Book App</p>
+    </footer>
+  </div>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav.toc a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(link.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
